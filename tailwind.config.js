@@ -8,6 +8,9 @@ module.exports = {
         body: ["Montserrat", "sans-serif"],
         mono: ["Ubuntu Mono", "monospace"],
       },
+      transitionDuration: {
+        2000: "2s",
+      },
     },
   },
   variants: {
