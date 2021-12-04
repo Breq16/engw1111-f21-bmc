@@ -1,6 +1,6 @@
 import React from "react"
 
-import Artist from "./writing/Artist.mdx"
+import Artist from "./writing/Artist"
 import Chemicals from "./writing/Chemicals.mdx"
 import Expression from "./writing/Expression.mdx"
 import Identity from "./writing/Identity.mdx"
