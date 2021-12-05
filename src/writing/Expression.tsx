@@ -78,7 +78,7 @@ function Blackout({ children }: { children: React.ReactNode }) {
   return (
     <span
       className={
-        "transition-colors duration-2000 " +
+        "transition-colors duration-[2s] " +
         (blackout ? "bg-black" : "bg-transparent")
       }
     >
