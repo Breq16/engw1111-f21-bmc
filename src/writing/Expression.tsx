@@ -79,7 +79,7 @@ function Blackout({ children }: { children: React.ReactNode }) {
     <span
       className={
         "transition-colors duration-2000 " +
-        (blackout ? "bg-black" : "bg-white")
+        (blackout ? "bg-black" : "bg-transparent")
       }
     >
       {children}
@@ -119,7 +119,7 @@ export default function Expression() {
   }, [typed, active])
 
   return (
-    <article className="pt-64 pb-96">
+    <article className="pt-64 pb-96 bg-gray-200">
       <h2 className="text-center font-display text-5xl mb-8">
         language: expression
       </h2>

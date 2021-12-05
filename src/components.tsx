@@ -6,6 +6,7 @@ export function Half(props: {
   children: React.ReactNode
   left?: boolean
   right?: boolean
+  center?: boolean
 }) {
   return (
     <p
