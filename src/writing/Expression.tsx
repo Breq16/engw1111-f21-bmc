@@ -72,7 +72,7 @@ function Blackout({ children }: { children: React.ReactNode }) {
   const [blackout, setBlackout] = React.useState(false)
 
   React.useEffect(() => {
-    setTimeout(() => setBlackout(true), 2000)
+    setTimeout(() => setBlackout(true), 1000)
   }, [])
 
   return (
@@ -113,7 +113,7 @@ export default function Expression() {
         } else {
           setTyped(typed + 1)
         }
-      }, 2)
+      }, 1)
       return () => clearInterval(timer)
     }
   }, [typed, active])
