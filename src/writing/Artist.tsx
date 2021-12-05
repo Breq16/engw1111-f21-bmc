@@ -34,7 +34,7 @@ function Expand({ onExpand }: { onExpand: () => void }) {
 
     setTimeout(() => {
       onExpand()
-    }, 2000)
+    }, 1000)
   }
 
   return (
@@ -56,7 +56,7 @@ function Expression({ expanded }: { expanded: boolean }) {
   return (
     <div
       className={
-        "transition-opacity duration-1000 " +
+        "transition-opacity duration-[2s] " +
         (expanded ? "opacity-100" : "opacity-0 pointer-events-none")
       }
     >
@@ -106,7 +106,7 @@ function Writer({ expanded }: { expanded: boolean }) {
   return (
     <div
       className={
-        "transition-opacity duration-1000 " +
+        "transition-opacity duration-[2s] " +
         (expanded ? "opacity-100" : "opacity-0 pointer-events-none")
       }
     >
