@@ -132,7 +132,7 @@ export default function Artist() {
   return (
     <article className="bg-gray-700 text-green-200 py-60 px-2 font-body">
       <h2 className="text-center text-6xl font-display">
-        I Can't Explain The Most Important Piece I Ever Wrote
+        I Can't Explain The Most Important Piece I've Ever Written
       </h2>
       <p className="max-w-xl mx-auto my-8 italic text-gray-200">
         The following is a response to professional video editor Taran Van
