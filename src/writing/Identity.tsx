@@ -62,8 +62,8 @@ function DsmTitle({
   children: React.ReactNode
 }) {
   return (
-    <div className="text-center text-2xl max-w-2xl mx-auto my-8 font-display">
-      <span className="text-7xl">{char}</span>
+    <div className="text-center text-2xl max-w-2xl mx-auto my-8 font-body bg-[#250858] p-4 text-white">
+      <span className="text-7xl font-display">{char}</span>
       <br />
       {children}
     </div>

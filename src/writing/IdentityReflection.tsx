@@ -13,6 +13,13 @@ export default function IdentityReflection() {
         context, and it was one I had personal experience with.
       </p>
       <p>
+        I thought about including a section on how non-binary identities are
+        left out by these diagnostic criteria--phrases added at the end such as
+        "or some other gender" make it clearly seem like these identities were
+        simply an afterthought. Fundamentally, though, that's not my experience,
+        and I didn't find a good way to integrate it into the rest of the piece.
+      </p>
+      <p>
         In a way, this piece is kind of a sequel to{" "}
         <span className="italic">
           "The Problem That Needs Fixing Is With The Chemicals In My Brain."
