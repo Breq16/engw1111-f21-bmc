@@ -25,7 +25,7 @@ export default function ExpressionReflection() {
         textgenrnn, took about thirty minutes of training on my $300 graphics
         card, then produced a model that returned a mixture of literal random
         letters and the exact same definitions that were fed in. I wanted to use
-        this network because it wouldn't be trained anywhere else--the only data
+        this network because it wouldn't be trained anywhere else—the only data
         it would receive would be the definitions I feed it, so it was the
         purest analog to my original vision.
       </p>
@@ -50,7 +50,7 @@ export default function ExpressionReflection() {
         reader to focus on the text between the blackout sections.
       </p>
       <p>
-        In the end, I'm a lot more happy with the version of this piece here--it
+        In the end, I'm a lot more happy with the version of this piece here—it
         shows both the generation of the source text, while preventing the
         reader from actually reading it after the blackout sections fade in.
       </p>

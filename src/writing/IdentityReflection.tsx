@@ -14,7 +14,7 @@ export default function IdentityReflection() {
       </p>
       <p>
         I thought about including a section on how non-binary identities are
-        left out by these diagnostic criteria--phrases added at the end such as
+        left out by these diagnostic criteria—phrases added at the end such as
         "or some other gender" make it clearly seem like these identities were
         simply an afterthought. Fundamentally, though, that's not my experience,
         and I didn't find a good way to integrate it into the rest of the piece.

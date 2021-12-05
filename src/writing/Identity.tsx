@@ -383,7 +383,7 @@ export default function Identity() {
         </Pg>
         <Pg>
           Abigail Thorn, who makes video essays about topics in philosophy,
-          defined transphobia as a form of “metaphysical skepticism” -- being
+          defined transphobia as a form of “metaphysical skepticism” — being
           skeptical that trans people are the gender they say they are.
           According to her, this is the root of all trans-related issues, from
           bathrooms to medical care. If you begin with the assumption that trans

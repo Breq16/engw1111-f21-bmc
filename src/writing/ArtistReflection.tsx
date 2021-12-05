@@ -12,7 +12,7 @@ export default function ArtistReflection() {
         Just like Taran, I view myself as being more of a technical person. But
         over the years, I've written a few pieces here and there, and I started
         to realize that I enjoyed the writing process more than I thought I
-        would. It started off technical--I would write up a short description of
+        would. It started off technical—I would write up a short description of
         different projects I've worked on, or I would write some API
         documentation, or something else that I could convince myself was just
         descriptive, not creative.

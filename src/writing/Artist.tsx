@@ -115,8 +115,8 @@ function Writer({ expanded }: { expanded: boolean }) {
         For the longest time, I viewed writing as a means to an end. I viewed it
         as a way to get a grade, or to tell someone something, or to archive my
         thoughts for later retrieval. But what was the “end” here? I already
-        understood that algorithm--there was no need for me to write an entirely
-        new explanation of it. Nobody else was going to read it--who the heck
+        understood that algorithm—there was no need for me to write an entirely
+        new explanation of it. Nobody else was going to read it—who the heck
         would care about this bizarre and largely irrelevant snippet of history?
         Why was I so compelled to typeset each equation perfectly?
       </Pg>

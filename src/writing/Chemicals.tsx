@@ -304,7 +304,7 @@ export default function Chemicals() {
           <p>
             So there's this video game I play sometimes. It's called Celeste.
             The main character, Madeline, is trying to climb a mountain. It’s
-            what you might call a ‘platformer’ game--you have to get Madeline
+            what you might call a ‘platformer’ game—you have to get Madeline
             from platform to platform, jumping and dashing through the air. And
             it’s famously hard, requiring precise timing of just the right
             button inputs.
@@ -407,7 +407,7 @@ export default function Chemicals() {
             As soon as we let go of that notion... the tough questions start.{" "}
             <span className="italic">
               Do I want to go on living? Or what about my friend who killed
-              herself two years ago--is there something I could’ve done to
+              herself two years ago—is there something I could’ve done to
               influence her decision? Would she still be here if only I did the
               right thing?
             </span>
