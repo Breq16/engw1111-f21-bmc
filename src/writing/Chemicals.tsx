@@ -55,9 +55,9 @@ function Bl({ children }: { children: React.ReactNode }) {
     React.useContext(BlackoutContext)
 
   return (
-    <span
+    <button
       className={
-        "p-1 -my-1 transition-colors duration-1000 " +
+        "p-1 -my-1 transition-colors duration-1000 cursor-text " +
         (blackout ? "text-white bg-black" : "text-red-500 bg-black")
       }
       onMouseEnter={() => setMouseBlackout(true)}
@@ -65,7 +65,7 @@ function Bl({ children }: { children: React.ReactNode }) {
       onClick={() => setClickBlackout(!clickBlackout)}
     >
       {children}
-    </span>
+    </button>
   )
 }
 
