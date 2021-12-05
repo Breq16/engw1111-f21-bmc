@@ -2,10 +2,16 @@ import React from "react"
 
 const BlackoutContext = React.createContext<{
   blackout: boolean
-  setBlackout: (state: boolean) => void
+  clickBlackout: boolean
+  mouseBlackout: boolean
+  setClickBlackout: (state: boolean) => void
+  setMouseBlackout: (state: boolean) => void
 }>({
   blackout: false,
-  setBlackout: () => {},
+  clickBlackout: false,
+  mouseBlackout: false,
+  setClickBlackout: () => {},
+  setMouseBlackout: () => {},
 })
 
 function Indent(props: { children: React.ReactNode }) {
@@ -45,7 +51,8 @@ function Heading({ children }: { children: React.ReactNode }) {
 }
 
 function Bl({ children }: { children: React.ReactNode }) {
-  const { blackout, setBlackout } = React.useContext(BlackoutContext)
+  const { blackout, clickBlackout, setClickBlackout, setMouseBlackout } =
+    React.useContext(BlackoutContext)
 
   return (
     <span
@@ -53,8 +60,9 @@ function Bl({ children }: { children: React.ReactNode }) {
         "p-1 -my-1 transition-colors duration-1000 " +
         (blackout ? "text-white bg-black" : "text-red-500 bg-black")
       }
-      onMouseEnter={() => setBlackout(true)}
-      onMouseLeave={() => setBlackout(false)}
+      onMouseEnter={() => setMouseBlackout(true)}
+      onMouseLeave={() => setMouseBlackout(false)}
+      onClick={() => setClickBlackout(!clickBlackout)}
     >
       {children}
     </span>
@@ -62,10 +70,20 @@ function Bl({ children }: { children: React.ReactNode }) {
 }
 
 export default function Chemicals() {
-  const [blackout, setBlackout] = React.useState(false)
+  const [clickBlackout, setClickBlackout] = React.useState(false)
+  const [mouseBlackout, setMouseBlackout] = React.useState(false)
+  const blackout = clickBlackout || mouseBlackout
 
   return (
-    <BlackoutContext.Provider value={{ blackout, setBlackout }}>
+    <BlackoutContext.Provider
+      value={{
+        blackout,
+        clickBlackout,
+        mouseBlackout,
+        setClickBlackout,
+        setMouseBlackout,
+      }}
+    >
       <article
         className={
           "pt-64 pb-96 transition-colors duration-1000 " +
