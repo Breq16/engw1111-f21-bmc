@@ -30,18 +30,14 @@ function DM({ children, date }: { children: React.ReactNode; date: string }) {
   )
 }
 
-function Caption(props: { children: React.ReactNode }) {
-  return <div>{props.children}</div>
-}
-
 function Heading({ children }: { children: React.ReactNode }) {
   return (
     <h3 className="text-3xl font-display text-center mt-16 mb-8">{children}</h3>
   )
 }
 
-function Line() {
-  return <hr className="max-w-sm mx-auto my-8 border-black" />
+function Bl({ children }: { children: React.ReactNode }) {
+  return <span className="text-red-500 bg-black p-1 -my-1">{children}</span>
 }
 
 export default function Chemicals() {
@@ -52,30 +48,48 @@ export default function Chemicals() {
       </h2>
       <Heading>i. selective serotonin reuptake inhibitor</Heading>
       <Poem center>
-        <p>“It's a chemical imbalance.”</p>
-        <p>“I'm going to increase your dose to 100mg.”</p>
         <p>
-          “I want to run some blood work first, just to narrow down the issue.”
+          “It's a <Bl>chemical</Bl> imbalance.”
+        </p>
+        <p>
+          “I'm going to increase your <Bl>dose</Bl> to 100mg.”
+        </p>
+        <p>
+          “I want to run some blood work first, just to narrow down the{" "}
+          <Bl>issue</Bl>.”
         </p>
         <p>“This may have some side effects.”</p>
+        <p>
+          “It's a chemical <Bl>imbalance</Bl>.”
+        </p>
+        <p>
+          “We can consider switching to a different <Bl>medication</Bl> if this
+          causes issues.”
+        </p>
+        <p>
+          “Meet with me in two weeks to discuss any adverse <Bl>effects</Bl>.”
+        </p>
+        <p>
+          “This type of medication will block the <Bl>reuptake</Bl> of serotonin
+          in the brain.”
+        </p>
+        <p>
+          “Your depression is caused by a lack of <Bl>serotonin</Bl>.”
+        </p>
+        <p>
+          “It's a chemical <Bl>imbalance</Bl>.”
+        </p>
+        <p>
+          “If you take these pills, your serotonin <Bl>levels</Bl> will rise.”
+        </p>
+        <p>
+          “They will become <Bl>normal</Bl>.”
+        </p>
         <p>“It's a chemical imbalance.”</p>
         <p>
-          “We can consider switching to a different medication if this causes
-          issues.”
+          “It's a <Bl>chemical</Bl> <Bl>imbalance</Bl>.”
         </p>
-        <p>“Meet with me in two weeks to discuss any adverse effects.”</p>
-        <p>
-          “This type of medication will block the reuptake of serotonin in the
-          brain.”
-        </p>
-        <p>“Your depression is caused by a lack of serotonin.”</p>
-        <p>“It's a chemical imbalance.”</p>
-        <p>“If you take these pills, your serotonin levels will rise.”</p>
-        <p>“They will become normal.”</p>
-        <p>“It's a chemical imbalance.”</p>
-        <p>“It's a chemical imbalance.”</p>
       </Poem>
-      <Line />
       <Heading>ii. bird’s eye view</Heading>
       <p className="max-w-5xl mx-auto font-body">
         A fear of driving across tall bridges.
@@ -129,11 +143,12 @@ export default function Chemicals() {
       </DM>
       <Heading>iii. part of me</Heading>
       <blockquote className="max-w-sm text-sm border-2 border-black p-4 mx-auto font-body italic">
-        Sertraline tablets are a prescription medication used to treat Major
-        Depressive Disorder, OCD, Panic Disorder, PTSD, and Social Anxiety
-        Disorder. It is important to talk with your healthcare provider about
-        the risks of treating depression and also the risks of not treating it.
-        You should discuss all treatment choices with your healthcare provider.
+        Sertraline tablets are a <Bl>prescription</Bl> <Bl>medication</Bl> used
+        to treat Major Depressive <Bl>Disorder</Bl>, OCD, Panic Disorder, PTSD,
+        and Social Anxiety Disorder. It is important to talk with your{" "}
+        <Bl>healthcare</Bl> provider about the risks of treating depression and
+        also the risks of not <Bl>treating</Bl> it. You should <Bl>discuss</Bl>{" "}
+        all treatment <Bl>choices</Bl> with your healthcare provider.
       </blockquote>
       <br />
       <Poem>
@@ -174,11 +189,12 @@ export default function Chemicals() {
       <blockquote className="max-w-sm text-sm border-2 border-black p-4 mx-auto font-body italic">
         The individual must be experiencing five or more symptoms during the
         same 2-week period and at least one of the symptoms should be either (1)
-        depressed mood or (2) loss of interest or pleasure. To receive a
-        diagnosis of depression, these symptoms must cause the individual
-        clinically significant distress or impairment in social, occupational,
-        or other important areas of functioning. The symptoms must also not be a
-        result of substance abuse or another medical condition.
+        depressed mood or (2) <Bl>loss of interest or pleasure</Bl>. To receive
+        a diagnosis of depression, these symptoms must cause the individual
+        <Bl>clinically significant distress</Bl> or <Bl>impairment</Bl> in
+        social, occupational, or other important areas of <Bl>functioning</Bl>.
+        The symptoms must also not be a result of substance abuse or another{" "}
+        <Bl>medical condition</Bl>.
       </blockquote>
       <br />
       <p className="font-body max-w-5xl mx-auto text-lg">
@@ -187,38 +203,49 @@ export default function Chemicals() {
           Reasoning: In my first year of doing robotics, my team qualified for
           the world championship event.
           <Indent>
-            I skipped meals to work on the robot. I averaged one meal per day.
-            One of my teammates was so concerned about me that she told my
-            parents. They brushed it off.
+            <Bl>
+              I skipped meals to work on the robot. I averaged one meal per day.
+              One of my teammates was so concerned about me that she told my
+              parents. They brushed it off.
+            </Bl>
           </Indent>
           Reasoning: When I came back home from boarding school, I started a new
           robotics team at my school.
           <Indent>
-            I blamed my self harm scars on carelessly handling sharp metal. I
-            often was so stressed that I would snap and get angry at my
-            teammates.
+            <Bl>
+              I blamed my self harm scars on carelessly handling sharp metal. I
+              often was so stressed that I would snap and get angry at my
+              teammates.
+            </Bl>
           </Indent>
           Reasoning: I got a perfect score on the SAT.
           <Indent>
-            I cut myself the night before the test. I cut myself the night after
-            the test. I cut myself the night before my score came out. I cut
-            myself the night after my score came out. Somehow, perfection wasn't
-            enough.
+            <Bl>
+              I cut myself the night before the test. I cut myself the night
+              after the test. I cut myself the night before my score came out. I
+              cut myself the night after my score came out. Somehow, perfection
+              wasn't enough.
+            </Bl>
           </Indent>
           Reasoning: I built software projects that I’m still proud of to this
           day, and I taught myself about software design patterns, network
           engineering, and computer vision.
           <Indent>
-            For weeks at a time, I woke up at about 3 PM, turned on my computer,
-            wrote code, went downstairs to eat dinner with my family, came back
-            upstairs, and sat at my desk and wrote more code until about 4 AM.
+            <Bl>
+              For weeks at a time, I woke up at about 3 PM, turned on my
+              computer, wrote code, went downstairs to eat dinner with my
+              family, came back upstairs, and sat at my desk and wrote more code
+              until about 4 AM.
+            </Bl>
           </Indent>
           Reasoning: I took three AP classes and 2 dual-enrollment courses at a
           local college each semester.
           <Indent>
-            I slept an average of four hours per night. On the good nights, I
-            would be too exhausted to cut, too exhausted to think, too exhausted
-            to exist.
+            <Bl>
+              I slept an average of four hours per night. On the good nights, I
+              would be too exhausted to cut, too exhausted to think, too
+              exhausted to exist.
+            </Bl>
           </Indent>
         </Indent>
       </p>
@@ -240,21 +267,25 @@ export default function Chemicals() {
         </p>
         <p>
           The mountain represents Madeline’s depression and her anxiety. Along
-          the way, Madeline meets Part of Her. Part of Her tries to push her
-          back down the mountain. Part of Her tries to tell her that she's not a
-          mountain climber. Part of Her stalls the gondola she’s travelling on,
-          causing Madeline to have a panic attack. And when Madeline tries to
-          leave Part of Her behind, Part of Her knocks her down to the base of
-          the mountain, making her climb all the way back up again.
+          the way, Madeline meets <Bl>Part of Her</Bl>. <Bl>Part of Her</Bl>{" "}
+          tries to push her back down the mountain. <Bl>Part of Her</Bl> tries
+          to tell her that she's not a mountain climber. <Bl>Part of Her</Bl>{" "}
+          stalls the gondola she’s travelling on, causing Madeline to have a
+          panic attack. And when Madeline tries to leave <Bl>Part of Her</Bl>{" "}
+          behind, <Bl>Part of Her</Bl> knocks her down to the base of the
+          mountain, making her climb all the way back up again.
         </p>
         <p>
-          Then, Madeline talks to Part of Her. She asks Part of Her for help.
-          She works with Part of Her to finish climbing the mountain. She works
-          with Part of Her. She doesn't take medicine to turn Part of Her off.
+          Then, Madeline talks to <Bl>Part of Her</Bl>. She asks{" "}
+          <Bl>Part of Her</Bl> for help. She works with <Bl>Part of Her</Bl> to
+          finish climbing the mountain. She works with <Bl>Part of Her</Bl>. She
+          doesn't take medicine to turn <Bl>Part of Her</Bl> off.
         </p>
         <br />
         <p>I took Madeline's name. I am Brooke Madeline Chalmers.</p>
-        <p>What about Part of Me?</p>
+        <p>
+          What about <Bl>Part of Me</Bl>?
+        </p>
       </div>
       <Heading>vi. to take comfort in insanity</Heading>
       <DM date="Saturday, October 10, 2020, 4:06 AM">
@@ -304,31 +335,35 @@ export default function Chemicals() {
       </DM>
       <div className="max-w-3xl mx-auto font-body text-lg flex flex-col gap-8">
         <p>
-          When someone shows symptoms of depression, we say that they suffer
-          from depression. We say that they struggle with depression. We say
-          that as if depression is some ghostly, external force that they're
-          fighting against.
+          When someone shows symptoms of depression, we say that they{" "}
+          <Bl>suffer from</Bl> depression. We say that they{" "}
+          <Bl>struggle with</Bl> depression. We say that as if depression is
+          some ghostly, <Bl>external force</Bl> that they're fighting against.
         </p>
         <p>
           It’s comforting. It puts some distance between mental illness and
-          everyday life. If people who try to kill themselves have some
-          condition, if they’re diagnosed with some label, if they’re insane...
-          it means suicidality is something that impacts “those people.” Not us.
-          It means that someone’s decision to end their own life can’t be a
-          rational decision.
+          everyday life. If people who try to kill themselves have some{" "}
+          <Bl>condition</Bl>, if they’re <Bl>diagnosed</Bl> with some{" "}
+          <Bl>label</Bl>, if they’re <Bl>insane</Bl>... it means suicidality is
+          something that impacts “those people.” Not us. It means that someone’s
+          decision to end their own life can’t be a rational decision.
         </p>
         <p>
-          As soon as we let go of that notion... the tough questions start. Do I
-          want to go on living? Or what about my friend who killed herself two
-          years ago--is there something I could’ve done to influence her
-          decision? Would she still be here if only I did the right thing?
+          As soon as we let go of that notion... the tough questions start.{" "}
+          <span className="italic">
+            Do I want to go on living? Or what about my friend who killed
+            herself two years ago--is there something I could’ve done to
+            influence her decision? Would she still be here if only I did the
+            right thing?
+          </span>
         </p>
         <p>
           When I read these messages that I sent, I'm not reading the writing of
-          a disease that hijacked my brain. I'm not reading the work of a
-          chemical imbalance. I'm reading my own words. Those words were written
-          by me. At some point, I considered my current situation, examined my
-          options, deliberated, and decided that I wanted to kill myself.
+          a <Bl>disease</Bl> that <Bl>hijacked</Bl> my brain. I'm not reading
+          the work of a <Bl>chemical imbalance</Bl>. I'm reading my own words.
+          Those words were written by me. At some point, I considered my current
+          situation, examined my options, deliberated, and decided that I wanted
+          to kill myself.
         </p>
         <p>
           And yet, something happened at the last minute that pulled me away.
@@ -337,10 +372,10 @@ export default function Chemicals() {
         <p>And yet, I don't want to die right now.</p>
         <p>And yet, I did back then.</p>
         <p>
-          As much as I can try to tell myself that I wasn't myself, or that it
-          was some chemical imbalance, or that the person who wrote those
-          messages a year ago isn't the same person typing this on my laptop
-          right now... deep down, I know it was. I wrote those words.
+          As much as I can try to tell myself that <Bl>I wasn't myself</Bl>, or
+          that it was some <Bl>chemical imbalance</Bl>, or that the person who
+          wrote those messages a year ago isn't the same person typing this on
+          my laptop right now... deep down, I know it was. I wrote those words.
         </p>
       </div>
       <Heading>
@@ -353,22 +388,28 @@ export default function Chemicals() {
         latter
       </DM>
       <div className="max-w-5xl mx-auto text-lg font-body flex flex-col gap-4">
-        <p>The problem that needs fixing is with the chemicals in my brain.</p>
+        <p>
+          The <Bl>problem</Bl> that needs fixing is with the chemicals in my
+          brain.
+        </p>
         <p>It's not that I wasted years running away from life.</p>
         <p>
           It's not that I feel uncomfortable with every aspect about how I fit
           into the world around me.
         </p>
         <p>
-          The problem that needs fixing is with the chemicals in my brain. It's
-          not that my dad refused to acknowledge me when my family visited me on
-          campus.
+          The problem that <Bl>needs fixing</Bl> is with the chemicals in my
+          brain. It's not that my dad refused to acknowledge me when my family
+          visited me on campus.
         </p>
         <p>
           It's not that I spent so long being told by my family and society to
           be someone I'm not.
         </p>
-        <p>The problem that needs fixing is with the chemicals in my brain.</p>
+        <p>
+          The problem that needs fixing is with the <Bl>chemicals</Bl> in my
+          brain.
+        </p>
         <p>
           It's not that I'm left with shattered remnants of my sense of
           identity.
@@ -378,8 +419,10 @@ export default function Chemicals() {
           keep up with responsibilities, and try to clean up the mess I've made
           for myself inside my skull.
         </p>
-        <p>The problem that needs fixing is with the chemicals in my brain.</p>
-        <p>The problem that needs fixing is with the chemicals in my brain.</p>
+        <p>
+          The problem that needs fixing is with the chemicals in my{" "}
+          <Bl>brain</Bl>.
+        </p>
         <p>
           It's not that I'm left trying to figure out how to live, too dysphoric
           and uncomfortable to be a boy, but too tall and masculine and
@@ -390,7 +433,10 @@ export default function Chemicals() {
           from what colors I like to what kind of clothes I like to wear, and I
           need to do it with that looming sense of self-doubt.
         </p>
-        <p>The problem that needs fixing is with the chemicals in my brain.</p>
+        <p>
+          The problem that <Bl>needs fixing</Bl> is with the chemicals in my
+          brain.
+        </p>
         <p>
           It's not that I hate my voice so much that I'm afraid to talk in class
           or even introduce myself to people.
@@ -404,7 +450,10 @@ export default function Chemicals() {
           confidence to be okay if they aren't?, and every time I so much as
           walk through the IV lobby is a test of my sense of self.
         </p>
-        <p>The problem that needs fixing is with the chemicals in my brain.</p>
+        <p>
+          The <Bl>problem</Bl> that needs fixing is with the chemicals in my
+          brain.
+        </p>
       </div>
       <Heading>viii. as i do, not as i say</Heading>
       <DM date="Tuesday, July 14, 2020, 1:44 PM">
@@ -428,7 +477,9 @@ export default function Chemicals() {
           Gradually, the voice in my head, the one telling me to kill myself...
           It started to quiet down.
         </p>
-        <p>Did I kill it before it could kill me?</p>
+        <p>
+          <Bl>Did I kill it before it could kill me?</Bl>
+        </p>
       </div>
     </article>
   )
