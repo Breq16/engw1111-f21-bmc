@@ -75,7 +75,7 @@ function Expression({ expanded }: { expanded: boolean }) {
         intuition through the trickiest parts of the proof. And without it, the
         wall would collapse the moment someone leaned on it.
       </Pg>
-      <div className="mx-auto w-max overflow-x-auto">
+      <div className="mx-auto max-w-max overflow-x-auto">
         <code className="whitespace-pre">
           {`
 float Q_rsqrt( float number )
