@@ -87,7 +87,7 @@ function Subreddit({ name }: { name: string }) {
 
 export default function Identity() {
   return (
-    <article className="py-64 bg-yellow-50">
+    <article className="py-64 px-2  bg-yellow-50">
       <h2 className="text-center text-5xl font-display mb-24">
         Measuring Identity
       </h2>
@@ -488,7 +488,9 @@ export default function Identity() {
           after transitioning. Even with a measurement error of <TeX>M</TeX> we
           can still arrive at a precise delta.
         </Pg>
-        <TeX block>(p_c+M)-(p_0+M)=(p_c-p_0)+(M-M)=p_c-p_0=p</TeX>
+        <div className="overflow-x-auto">
+          <TeX block>(p_c+M)-(p_0+M)=(p_c-p_0)+(M-M)=p_c-p_0=p</TeX>
+        </div>
         <Pg>
           So, with both confidence in my algebra and apologies to Eula Biss,
           I’ll proceed.

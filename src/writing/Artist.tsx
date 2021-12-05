@@ -15,7 +15,7 @@ function Pg({ children }: { children: React.ReactNode }) {
 }
 
 function Line() {
-  return <hr className="max-w-xs mx-auto my-8" />
+  return <hr className="max-w-xs mx-auto my-8 border-green-100" />
 }
 
 function Callout({ children }: { children: React.ReactNode }) {
@@ -109,7 +109,7 @@ export default function Artist() {
   const [expanded, setExpanded] = React.useState(false)
 
   return (
-    <article className="bg-gray-700 text-green-200 py-60 font-body">
+    <article className="bg-gray-700 text-green-200 py-60 px-2 font-body">
       <h2 className="text-center text-6xl font-display">artist</h2>
       <p className="max-w-xl mx-auto my-8 italic text-gray-200">
         The following is a response to professional video editor Taran Van

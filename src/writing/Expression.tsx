@@ -119,7 +119,7 @@ export default function Expression() {
   }, [typed, active])
 
   return (
-    <article className="pt-64 pb-96 bg-gray-200">
+    <article className="pt-64 pb-96 px-2 bg-gray-200">
       <h2 className="text-center font-display text-5xl mb-8">
         language: expression
       </h2>

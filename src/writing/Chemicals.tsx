@@ -86,7 +86,7 @@ export default function Chemicals() {
     >
       <article
         className={
-          "pt-64 pb-96 transition-colors duration-1000 " +
+          "pt-64 pb-96 px-4 transition-colors duration-1000 " +
           (blackout ? "bg-black" : "bg-red-500")
         }
       >
